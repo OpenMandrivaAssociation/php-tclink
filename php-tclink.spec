@@ -17,6 +17,7 @@ BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	tclink-devel >= 3.4.4
 BuildRequires:	openssl-devel
 Epoch:		1
+BuildRoot:	%{_tmppath}/%{name}-%{version}-buildroot
 
 %description
 This package provides a module for using TCLink directly from PHP scripts.

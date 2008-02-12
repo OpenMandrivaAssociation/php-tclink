@@ -6,7 +6,7 @@
 Summary:	TCLink enables credit card processing via the TrustCommerce payment gateway
 Name:		php-%{modname}
 Version:	3.4.4
-Release:	%mkrel 3
+Release:	%mkrel 4
 Group:		Development/PHP
 License:	LGPL
 URL:		http://www.trustcommerce.com/tclink.html
@@ -29,6 +29,10 @@ the TrustCommerce payment gateway.
 %setup -q -n tclink-%{version}-php
 %patch0 -p0
 %patch1 -p0
+
+# fix strange attribs
+find . -type d -exec chmod 755 {} \;
+find . -type f -exec chmod 644 {} \;
 
 %build
 %serverbuild

@@ -12,6 +12,7 @@ License:	LGPL
 URL:		http://www.trustcommerce.com/tclink.html
 Source0:	http://www.trustcommerce.com/downloads/tclink-%{version}-php.tar.gz
 Patch0:		TCLink-3.4.0-lib64.diff
+Patch1:		tclink-3.4.5-php-54x.diff
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	tclink-devel >= 3.4.4
 BuildRequires:	openssl-devel
@@ -32,7 +33,7 @@ find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
 
 %patch0 -p0
-
+%patch1 -p0
 
 %build
 %serverbuild

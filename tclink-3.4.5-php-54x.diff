@@ -1,0 +1,20 @@
+--- php_tclink.c	2009-10-07 00:05:11.000000000 +0200
++++ php_tclink.c.oden	2012-05-02 10:02:13.486212960 +0200
+@@ -36,7 +36,7 @@
+ 
+ #if HAVE_TCLINK
+ 
+-function_entry php_tclink_functions[] = {
++zend_function_entry php_tclink_functions[] = {
+ 	PHP_FE(tclink_send, NULL)
+ 	PHP_FE(tclink_getversion, NULL)
+ 	{NULL, NULL, NULL}
+@@ -89,7 +89,7 @@ PHP_MINFO_FUNCTION(tclink)
+    Send the transaction in for processing. */
+ PHP_FUNCTION(tclink_send)
+ {
+-	pval **params, **zvalue;
++	zval **params, **zvalue;
+ 	HashTable *hash;
+ 	char *key, *value, *next_key;
+ 

@@ -1,0 +1,11 @@
+--- config.m4	2003-09-11 01:44:57.000000000 +0200
++++ config.m4.oden	2004-12-12 09:55:30.653469568 +0100
+@@ -19,7 +19,7 @@
+ 
+ dnl Need to have a way to sepcify the include dir as well
+ if test "$PHP_SSL" != "no"; then
+-  for i in /lib /usr/local/lib /usr/lib $PHP_SSL; do
++  for i in /lib /usr/local/lib /usr/lib $PHP_SSL /usr/$PHP_LIBDIR; do
+       SSL_LIB_CHK(/)
+     fi
+   done

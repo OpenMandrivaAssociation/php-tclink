@@ -3,10 +3,12 @@
 %define soname %{modname}.so
 %define inifile A13_%{modname}.ini
 
+%define debug_package %{nil}
+
 Summary:	TCLink enables credit card processing via the TrustCommerce payment gateway
 Name:		php-%{modname}
 Version:	3.4.5
-Release:	%mkrel 17
+Release:	18
 Group:		Development/PHP
 License:	LGPL
 URL:		http://www.trustcommerce.com/tclink.html

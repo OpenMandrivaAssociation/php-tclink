@@ -12,7 +12,7 @@ Version:	3.4.5
 Release:	28
 Group:		Development/PHP
 License:	LGPLv2
-Url:		http://www.trustcommerce.com/tclink.html
+Url:		https://www.trustcommerce.com/tclink.html
 Source0:	http://www.trustcommerce.com/downloads/tclink-%{version}-php.tar.gz
 Patch0:		TCLink-3.4.0-lib64.diff
 Patch1:		tclink-3.4.5-php-54x.diff

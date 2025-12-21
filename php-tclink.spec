@@ -16,6 +16,11 @@ Url:		https://www.trustcommerce.com/tclink.html
 Source0:	http://www.trustcommerce.com/downloads/tclink-%{version}-php.tar.gz
 Patch0:		TCLink-3.4.0-lib64.diff
 Patch1:		tclink-3.4.5-php-54x.diff
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	php-devel >= 3:5.2.0
 BuildRequires:	tclink-devel >= 3.4.4
 BuildRequires:	pkgconfig(openssl)
